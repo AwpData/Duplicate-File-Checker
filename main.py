@@ -42,7 +42,6 @@ else:
     same_size = list()
     seen = list()
     no_same_files = True
-    print(file_storage)
     for key, temp in file_storage.items():  # Now we loop through each file and see which ones are the same
         size_compare = int(key) - int(temp[1])
         for size_, value in file_storage.items():  # This one compares each file to the size_compare file for size
